@@ -1,5 +1,5 @@
 # vscode-spyder-docker
-- VSCode로 Docker Container를 접속하여 Spyder 형식으로 사용하는 방법 안내
+- VSCode로 Docker Container를 접속하여 Jupyder Notebook을 Spyder 형식으로 사용하는 방법 안내
 
 ## 1. Rootless Docker 설치
 - 디오비 Docker 환경은 서버 보안을 위해 Root 권한이 필요 없는 Rootless Docker를 사용함.
@@ -24,3 +24,8 @@
 1. 윈도우 / 리눅스의 경우 : Control + P | 맥의 경우 : command + P 클릭
 2. `> Dev Containers: Rebuild and Reopen in Container` 입력 및 엔터
 3. 코드 창이 뜰때까지 기다렸다가 기존처럼 사용
+
+## 5. Vscode에서 Spyder 형식으로 사용하기
+1. .devcontainer/[settings.json](https://github.com/dob-world/vscode-spyder-docker/blob/main/.devcontainer/settings.json) 설정 필수
+2. main.py의 셀에 커서 선택 후 `Shift + Enter`
+3. 오류날 시 Jupyter의 Kernel 바꿔주기
