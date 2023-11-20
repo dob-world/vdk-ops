@@ -11,4 +11,8 @@ RUN apt-get -y update \
  && python3 -m pip install --upgrade pip \
  && python3 -m pip install --upgrade setuptools
 
+# 로컬에 있는 requirements.txt를 복사할 때
+# COPY requirements.txt /workspace/requirements.txt
+# RUN pip3 install -r /workspace/requirements.txt
+
 RUN pip3 install --no-cache-dir -Iv notebook ipython ipykernel psutil==5.9.2
